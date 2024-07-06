@@ -1,0 +1,1 @@
+# Actually now tests unwritten. This module provide some scenarios to test them through logging system
