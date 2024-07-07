@@ -1,7 +1,6 @@
 import datetime
 from sqlalchemy import ForeignKey, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from sqlalchemy.sql import func
 
 from db.base_class import Base
 from schemas.tasks import TaskSchema, TaskStatusChoice
