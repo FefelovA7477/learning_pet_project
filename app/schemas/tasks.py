@@ -5,6 +5,7 @@ from datetime import datetime
 
 class TaskStatusChoice(enum.Enum):
     BACKLOG = 'backlog'
+    ACTIVE = 'active'
     IN_PROGRESS = 'in progress'
     DONE = 'done'
     EXPIRED = 'expired'
@@ -28,7 +29,7 @@ class TaskShemaAdd(BaseModel):
     deadline: datetime
     title: str
     description: str
-    status: TaskStatusChoice
+    status: TaskStatusChoice = TaskStatusChoice.ACTIVE
 
 
 class TaskSchemaInfo(BaseModel):

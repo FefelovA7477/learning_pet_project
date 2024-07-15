@@ -8,6 +8,9 @@ class Settings(BaseSettings):
     DB_URI: str
     API_SECRET: str
     DEBUG: int
+    YANDEX_GPT_API_TOKEN: str
+    YANDEX_GPT_CATALOG_ID: str
+    YANDEX_GPT_FOLDER_ID: str
 
     class Config:
         env_file = '.env'
